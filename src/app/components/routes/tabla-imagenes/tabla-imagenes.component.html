@@ -1,0 +1,48 @@
+<div class="centro width">
+    <form (ngSubmit)="enviarFecha()" [formGroup]="formularioFecha">
+      <label for="" class="">Desde: </label>
+      <input type="date" formControlName="fecha" id="fecha" class=""  value="">
+      <button type="submit" class="btn" >Mostrar</button>
+    </form>
+  </div>
+  
+  <div class="centro width">
+  <label>IMAGENES DESDE LA API DE LA NASA</label>
+  <br>
+  <table  class="">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Sol</th>
+        <th>Camara</th>
+        <th class="tdImg">Imagenes</th>
+        <th>Fecha</th>
+        <th>Rover</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let imagen of imagenes">
+        <td>{{imagen.id}}</td>
+        <td>{{imagen.sol}}</td>
+        <td>
+          <span>id:</span> {{imagen.camera.id}},<br>
+          <span>name:</span> {{imagen.camera.name}},<br>
+          <span>rover_id:</span> {{imagen.camera.rover_id}},<br>
+          <span>full_name:</span> {{imagen.camera.full_name}}
+        </td>
+        <td>
+          <img class="img" src="{{imagen.img_src}}">
+        </td>
+        <td>{{imagen.earth_date}}</td>
+        <td >
+            <span>id:</span> {{imagen.rover.id}} <br>
+            <span>name:</span> {{imagen.rover.name}}<br>
+            <span>landing_date:</span> {{imagen.rover.landing}}<br>
+            <span>launch_date:</span> {{imagen.rover.lounch_date}}<br>
+            <span>status:</span> {{imagen.rover.status}}
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>

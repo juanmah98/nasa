@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiUrl: "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos"
 };

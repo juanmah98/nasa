@@ -1,5 +1,9 @@
-.equipo {background-color: #7146AF ;
-	background-image: url(../../../../assets/imagenes/footer.jpg);
+@font-face {
+    font-family: "nasa";
+    src: url(../../../../assets/font/Nasa.ttf);
+}
+.equipo { 
+	
     border-radius: 75%;
     padding: 100PX;
     font-size: 90px;
@@ -9,8 +13,19 @@
     align-items: center;
      } 
 
+.footer h2{
+    font-size: 70px;
+    color: white;
+    font-family: "nasa";
+}
+
+.logo{
+    height: 80px;
+    
+}
 
 .footer {
 background-color: #192B53 ;
 border-top: solid blueviolet;
 }
+
