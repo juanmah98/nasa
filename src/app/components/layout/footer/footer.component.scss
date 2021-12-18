@@ -2,8 +2,8 @@
     font-family: "nasa";
     src: url(../../../../assets/font/Nasa.ttf);
 }
-.equipo { 
-	
+.equipo {background-color: #7146AF ;
+	background-image: url(../../../../assets/imagenes/footer.jpg);
     border-radius: 75%;
     padding: 100PX;
     font-size: 90px;
@@ -11,7 +11,19 @@
     font-style: comic sans;
     text-align: center;
     align-items: center;
-     } 
+    background-size: cover;
+} 
+
+
+.footer {
+background-color: #192B53 ;
+border-top: solid blueviolet;
+}
+
+p{
+    color: white;
+    font-size: 30px;
+}
 
 .footer h2{
     font-size: 70px;
@@ -24,8 +36,5 @@
     
 }
 
-.footer {
-background-color: #192B53 ;
-border-top: solid blueviolet;
-}
+
 

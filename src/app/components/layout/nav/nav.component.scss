@@ -1,37 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- 
- main img{
-    max-width: 100%;
-    margin: 0;
- }
- 
- nav{
-    background-color: #192b53;
-    color: white;
-    display: inline-flex;
-    position: fixed; 
- }
- 
- header nav ul li{
-    list-style: none;
-    display: inline-flex;
-    border: 1px solid;
-    font-family: 'Space Mono', monospace;
- }
- 
- header nav ul li a{
-    text-decoration: none;
-    padding: 20px 20px 20px 20px; 
-    display: inline-flex;
-    color: white;
- }
- 
- header nav ul li a:hover {
-    background-color: #e14694 ;
-    color: white;
-    font-family: 'Space Mono', monospace;  
- }
+@font-face {
+   font-family: "nasa";
+   src: url(../../../../assets/font/Nasa.ttf);
+}
+
+
+h2{
+   font-size: 70px;
+   color: white;
+   font-family: "nasa";
+}
+
+.logo{
+   height: 80px;
+   
+}
